@@ -149,6 +149,6 @@ var FindProxyForURL = function(init, profiles) {
     "+company": function(url, host, scheme) {
         "use strict";
         if (/^127\.0\.0\.1$/.test(host) || /^::1$/.test(host) || /^localhost$/.test(host)) return "DIRECT";
-        return "PROXY 10.16.13.18:8080";
+        return "PROXY 10.95.55.178:3128";
     }
 });
