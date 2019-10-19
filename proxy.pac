@@ -144,6 +144,7 @@ var FindProxyForURL = function(init, profiles) {
         if (/(?:^|\.)ytimg\.com$/.test(host)) return "+company";
         if (/(?:^|\.)googlevideo\.com$/.test(host)) return "+company";
         if (/(?:^|\.)gitbooks\.io$/.test(host)) return "+company";
+        if (/(?:^|\.)youtube\.com$/.test(host)) return "+company";
         return "DIRECT";
     },
     "+company": function(url, host, scheme) {
